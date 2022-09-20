@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./source/images/favicon-cem.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>INSTITUTO CEM</title>
+</head>
+<body>
+    <header>
+
+        <div id="logo__header">
+            <a href="#"><img src="source/images/logo-cem.png" alt="logo-cem-rabiscado"></a>
+        </div>
+
+        <div id="links-nav__header">
+            <a href="#introduction">INÍCIO</a>
+            <a href="#historia-cem">INFORMATIVO</a>
+            <a href="#main">CURSOS</a>
+            <a href="#">FOTOS</a>
+            <a href="#form">FORMULÁRIO</a>
+            <a href="#redes-sociais">CONTATOS</a>
+        </div>
+
+        <div id="mobile-menu__header">
+            <input type="checkbox" name="navbar" id="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div id="links-nav-mobile__header">
+                <li><a href="#introduction">INÍCIO</a></li>
+                <li><a href="#historia-cem">INFORMATIVO</a></li>
+                <li><a href="#main">CURSOS</a></li>
+                <li><a href="#">FOTOS</a></li>
+                <li><a href="#form">FORMULÁRIO</a></li>
+                <li><a href="#redes-sociais">CONTATOS</a></li>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="hr-line"></div>
+
+    <section id="introduction">
+
+        <img src="./source/images/introduction-images/manhuacu-top-view.jpg" alt="manhuaçu-city-top-view">
+        <h1>Conheça o melhor <br> Centro Educacional <br> de Manhuaçu</h1>
+        <div id="arrowdown">
+            <a href="#main"><img src="./source/images/introduction-images/arrow-down-icon-8.jpg" alt="arrow-down"></a>
+        </div>
+
+    </section> <!-- introduction -->
+
+    <div class="hr-line"></div>
+
+    <main id="main" class="flex-cl">
+
+        <div class="title__section">
+            <h2>Uma instituição que não cansa de surpreender</h2>
+        </div>
+
+        <div class="five-images__section flex-cl">
+
+            <div class="two-images__section flex-row">
+
+                <div class="img__section">
+                    <img src="./source/images/main-images/ensino-fundamental.jpeg" alt="ensino-fundamental">
+                    <h4>Maternal - Fundamental</h4>
+                </div>
+
+                <div class="img__section">
+                    <img src="./source/images/main-images/ensino-medio.jpeg" alt="ensino-medio">
+                    <h4>Ensino Médio</h4>
+                </div>
+
+            </div> <!-- two-images__section -->
+
+            <div class="three-images__section flex-row">
+
+                <div class="img__section">
+                    <img src="./source/images/main-images/trilhas-do-futuro.jpeg" alt="trilhas-do-futuro">
+                    <h4>Trilhas do Futuro</h4>
+                </div>
+
+                <div class="img__section">
+                    <img src="./source/images/main-images/instituto-mix.jfif" alt="instituto-mix">
+                    <h4>Instituto Mix</h4>
+                </div>
+
+                <div class="img__section">
+                    <img src="./source/images/main-images/unopar.jpeg" alt="unopar-foto">
+                    <h4>UNOPAR</h4>
+                </div>
+
+            </div> <!-- three-images__section -->
+
+        </div><!-- five-images__section -->
+
+    </main> <!-- main -->
+
+    <div class="hr-line"></div>
+
+    <section id="historia-cem" class="flex-row flex-50-50">
+
+        <div class="img-50">
+            <img src="source/images/logo-cem.png" alt="img">
+        </div>
+
+        <div class="text-50">
+            <h2 class="title__section">Sobre:</h2>
+            <p>
+                o CEM constitui-se em um referencial de ensino privado de Manhuaçu e região, contando com cerca de 4 mil alunos  atendendo Educação infantil, Ensino Fundamental, Ensino Médio, Cursos Técnicos, Graduação, Pós-graduação. <br/>Agregações:  INSTITUTO MIX, UNOPAR e TRILHAS DO FUTURO
+            </p>
+        </div>
+
+    </section> <!-- #historia-cem -->
+
+    <div class="hr-line"></div>
+
+    <section id="slider-fotos" class="flex-cl" style=" overflow-y: hidden; overscroll-behavior-y: none; ">
+        <iframe src="./source/pages/slide-page/images.html" 
+            frameborder="0" allowfullscreen 
+            style=" height:50vh; width:50%; border: none; ">
+        </iframe>
+    </section>
+
+    <div class="hr-line"></div>
+    
+    <section class="form" id="form">
+        <div class="img-50">
+            <img src="source/images/form-icon.png" alt="img">
+        </div>
+        <form action="" autocomplete="off" autocapitalize="on">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name">
+
+            <label for="e-mail">E-mail:</label>
+            <input type="email" name="e-mail" id="e-mail">
+
+            <label for="telefone">Telefone para contato:</label>
+            <input type="tel" name="telefone" id="telefone">
+
+            <label for="assunto">Instituição:</label>
+            <select name="instituicao" id="instituicao">
+                <option value="cem">CEM</option>
+                <option value="unopar">Unopar</option>
+                <option value="institutomix">Instituto Mix</option>
+                <option value="trilhasdofuturo">Trilhas do Futuro</option>
+            </select>
+            
+            <label for="assunto">Quero saber sobre:</label>
+            <select name="assunto" id="assunto">
+                <option value="maternal">Maternal</option>
+                <option value="ensinofundamental">Ensino Fundamental</option>
+                <option value="ensinomedio">Ensino Médio</option>
+                <option value="ensinotecnico">Ensino Técnico</option>
+                <option value="outro">Entrar em contato para tirar dúvida</option>
+                <option value="outro">Outro assunto</option>
+            </select>
+
+            <label for="text">Perqunta:</label>
+            <textarea name="text" id="text" cols="30" rows="5"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section> <!-- #form -->
+
+    <div class="hr-line"></div>
+    
+    <section id="redes-sociais" class="flex-row ">
+
+        <div class="flex-cl img-arred-small">
+            <a href="https://instagram.com/cem.manhuacu?igshid=YmMyMTA2M2Y=" target="_blank">
+                <img src="source/images/redes-sociais/instagram.png" alt="instagram">
+                <p>Instagram</p>
+            </a>
+        </div>
+
+        <div class="hr-line-90"></div>
+
+        <div class="flex-cl img-arred-small">
+            <a href="https://m.facebook.com/CEManhuacu/" target="_blank">
+                <img src="source/images/redes-sociais/facebook.png" alt="facebook">
+                <p>Facebook</p>
+            </a>
+        </div>
+
+        <div class="hr-line-90"></div>
+
+        <div class="flex-cl img-arred-small">
+            <a href="https://maps.app.goo.gl/kKdEwEn6YJCxDFUQ7" target="_blank">
+                <img src="source/images/redes-sociais/localizacao.png" alt="localização">
+                <p>Localização</p>
+            </a>
+        </div>
+
+    </section> <!-- #redes-sociais -->
+
+    <footer class="flex-cl">
+        <p>Todos os Direitos Reservados &copy;</p>
+    </footer>
+
+</body>
+</html>

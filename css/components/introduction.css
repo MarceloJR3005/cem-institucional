@@ -1,0 +1,69 @@
+@import url(../style.css);
+
+section#introduction
+{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+    section#introduction img
+    {
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(.7) blur(1px);
+    }
+
+    section#introduction h1
+    {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: max-content;
+        z-index: 0;
+        color: var(--white);
+        font-family: var(--font-primary);
+        font-weight: bold;
+        font-size: clamp(1.5em, 7vw, 5em);
+        letter-spacing: normal;
+        text-align: center;
+        text-shadow: 1px 5px 5px black, 1px 30px 10px #000000f0;
+        transition: letter-spacing 1s ease-in-out, text-shadow 1s ease-in-out;
+        text-transform: uppercase;
+    }
+
+        section#introduction h1:hover
+        {
+            letter-spacing: .1rem;
+            text-shadow: 1px 4px 6px black, 1px 29px 11px #000000f0;
+        }
+
+    #arrowdown
+    {
+        display: block;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+        div#arrowdown img
+        {
+            width: 50px;
+            height: 50px;
+            max-width: 50px;
+            filter: invert();
+            animation: arrows 1s infinite ease-in-out alternate;
+        }
+
+        @keyframes arrows 
+        {
+            to { transform: translateY(0px); }
+            from { transform: translateY(-5px); }       
+        }

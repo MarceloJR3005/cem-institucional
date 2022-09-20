@@ -1,0 +1,63 @@
+.form
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5vh 0vw;
+    margin: 10vh 0px;
+}
+
+.form img
+{
+    max-width: 80%;
+    filter: invert();
+}
+
+.form form
+{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.form form label
+{
+    margin: 3vh 0px .5vh 0px;
+    cursor: pointer;
+}
+
+:is(.form form) input, select, option, textarea, button
+{
+    text-indent: none;
+    background-color: black;
+    outline: none;
+    border: 1px solid white inset;
+    padding: 1vh 0.5vw;
+    border-radius: 5px;
+    color: white;
+}
+
+.form form button
+{
+    padding: 3%;
+    margin: 5vh 0px 0px;
+    font-size: large;
+    font-weight: 700;
+    letter-spacing: .15ch;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.form form button::after
+{
+    content: " \279f";
+}
+
+
+@media (max-width: 720px) {
+    section.form
+    {
+        flex-direction: column;
+    }
+}

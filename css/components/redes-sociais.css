@@ -1,0 +1,22 @@
+div.flex-cl.img-arred-small
+{
+    width: calc(99% / 3);
+    padding: 10%;
+    gap: 5vh 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.img-arred-small img
+{
+    width: clamp(30px, 5vw, 100px);
+    clip-path: circle(100%);
+    filter: invert();
+    margin-bottom: 3vh;
+    transition: transform .2s ease-in-out;
+}
+
+.img-arred-small img:hover
+{
+    transform: scale(1.1);
+}

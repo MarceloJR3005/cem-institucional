@@ -1,0 +1,36 @@
+#tur-points
+{
+    display: none;
+}
+
+#tur-points.flex-50-50
+{
+    /* flex-wrap: nowrap; */
+    /* justify-content: center; */
+    /* display: block; */
+}
+
+#tur-points {background-color: var(--black-transparent);padding: 10vh 1%;}
+
+#tur-points .text-50
+{
+    display: block;
+    height: 100%;
+}
+
+#tur-points .text-50 h3.title__section
+{
+    text-align: left;
+    font-family: var(--font-secundary);
+    font-weight: bold;
+    font-style: normal;
+    font-size: clamp(1em, 6vw, 3em);
+    padding: 30px 0px;
+    text-transform: uppercase;
+}
+
+#tur-points .text-50 p
+{
+    font-family: var(--font-primary);
+    font-weight: normal
+}

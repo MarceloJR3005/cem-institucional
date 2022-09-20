@@ -1,0 +1,121 @@
+/* MuseoSans */
+    @font-face 
+    {
+        font-family: 'MuseoSans';
+        src: url("../source/fonts/museosans-500/Fonts/MuseoSans_500.otf");
+        font-style: normal;
+    }
+    @font-face 
+    {
+        font-family: 'MuseoSans';
+        src: url("../source/fonts/museosans-500/Fonts/MuseoSans_500_Italic.otf");
+        font-style: italic;
+    }
+/* MuseoSans */
+
+/* Ubuntu */
+    @font-face 
+    {
+        font-family: 'Ubuntu';
+        src: url("../source/fonts/ubuntu-font-family-0.83/Ubuntu-B.ttf");
+        font-style: normal;
+        font-weight: bold;
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu';
+        src: url("../source/fonts/ubuntu-font-family-0.83/Ubuntu-BI.ttf");
+        font-style: italic;
+        font-weight: bold;
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu';
+        src: url("../source/fonts/ubuntu-font-family-0.83/Ubuntu-C.ttf");
+        font-style: normal;
+        font-weight: normal;
+        font-stretch: condensed;
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu';
+        src: url("../source/fonts/ubuntu-font-family-0.83/Ubuntu-L.ttf");
+        font-style: normal;
+        font-weight: lighter;
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu';
+        src: url("../source/fonts/ubuntu-font-family-0.83/Ubuntu-LI.ttf");
+        font-style: italic;
+        font-weight: lighter;
+        font-stretch: normal;
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu';
+        src: url("../source/fonts/ubuntu-font-family-0.83/Ubuntu-M.ttf");
+        font-style: normal;
+        font-weight: 700;
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu';
+        src: url("../source/fonts/ubuntu-font-family-0.83/Ubuntu-MI.ttf");
+        font-style: italic;
+        font-weight: 700;
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu';
+        src: url("../source/fonts/ubuntu-font-family-0.83/Ubuntu-R.ttf");
+        font-style: normal;
+        font-weight: normal;
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu';
+        src: url("../source/fonts/ubuntu-font-family-0.83/Ubuntu-RI.ttf");
+        font-style: italic;
+        font-weight: normal;
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu';
+        src: url("../source/fonts/ubuntu-font-family-0.83/Ubuntu-Th.ttf");
+        font-style: normal;
+        font-weight: 100;
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu-Mono';
+        src: url("../source/fonts/ubuntu-font-family-0.83/UbuntuMono-R.ttf");
+        font-style: normal;
+        font-weight: normal;
+        font-display: monospace;        
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu-Mono';
+        src: url("../source/fonts/ubuntu-font-family-0.83/UbuntuMono-RI.ttf");
+        font-style: italic;
+        font-weight: normal;
+        font-display: monospace;        
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu-Mono';
+        src: url("../source/fonts/ubuntu-font-family-0.83/UbuntuMono-B.ttf");
+        font-style: normal;
+        font-weight: bold;
+        font-display: monospace;        
+    }
+    @font-face 
+    {
+        font-family: 'Ubuntu-Mono';
+        src: url("../source/fonts/ubuntu-font-family-0.83/UbuntuMono-BI.ttf");
+        font-style: italic;
+        font-weight: bold;
+        font-display: monospace;        
+    }
+/* Ubuntu */

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../source/images/favicon-cem.png" type="image/x-icon">
+    <link rel="stylesheet" href="./slide-page.css">
+    <title>INSTITUTO CEM</title>
+</head>
+<body>
+
+    <main>
+        <div>
+            <img src="./images/setembro-amarelo-02.jpeg" alt="setembro-amarelo">
+            <img src="./images/setembro-amarelo-01.jpeg" alt="setembro-amarelo">
+            <img src="./images/bolsa-cem.jpeg" alt="bolsa-cem">
+            <img src="./images/cem-estrutura.jpeg" alt="cem-estrutura">
+            <img src="./images/trilhas-do-futuro-cem.jpeg" alt="trilhas-do-futuro-cem">
+        </div>
+    </main>
+    
+    <script>
+        const imgs = document.querySelector("main");
+        imgs.addEventListener("wheel", e => 
+        {
+            clearInterval(1600)
+            if (e.deltaY > 0) 
+            {
+                console.log(e.target);
+                e.target.scrollBy(100, 0);
+            }   
+            else
+            {
+                e.target.scrollBy(-100, 0);
+            }
+        })
+
+        setInterval(set = () =>
+        {
+            console.log(imgs.scrollWidth);
+            console.log(imgs.scrollLeft);
+            console.log(imgs.scrollLeft + 1000 <= imgs.scrollWidth);
+            if (imgs.scrollLeft + 1000 <= imgs.scrollWidth){ imgs.scrollBy(200,0) }
+            else 
+            { 
+                imgs.scroll(0, 0);
+            }
+        }, 3000)
+
+    </script>
+</body>
+</html>

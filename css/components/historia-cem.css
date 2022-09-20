@@ -1,0 +1,19 @@
+section#historia-cem { background-color: var(--black-transparent); padding: 5% 1%; }
+    
+
+section#historia-cem .text-50
+{
+    font-size: 105%;
+    font-weight: normal;
+}
+
+@media (max-width: 1100px)
+{
+    section#historia-cem
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh 0px;
+        padding: 5vh 0px;
+    }
+}
