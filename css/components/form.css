@@ -38,6 +38,11 @@
     color: white;
 }
 
+.form form select
+{
+    cursor: pointer;
+}
+
 .form form button
 {
     padding: 3%;
@@ -47,6 +52,7 @@
     letter-spacing: .15ch;
     border-radius: 10px;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 .form form button::after

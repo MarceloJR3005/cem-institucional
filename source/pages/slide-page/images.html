@@ -21,30 +21,30 @@
     
     <script>
         const imgs = document.querySelector("main");
+        let time = true;
         imgs.addEventListener("wheel", e => 
         {
-            clearInterval(1600)
+            let time = false;
             if (e.deltaY > 0) 
             {
                 console.log(e.target);
-                e.target.scrollBy(100, 0);
+                e.target.scrollBy(500, 0);
             }   
             else
             {
-                e.target.scrollBy(-100, 0);
+                e.target.scrollBy(-500, 0);
             }
         })
 
         setInterval(set = () =>
         {
-            console.log(imgs.scrollWidth);
-            console.log(imgs.scrollLeft);
-            console.log(imgs.scrollLeft + 1000 <= imgs.scrollWidth);
-            if (imgs.scrollLeft + 1000 <= imgs.scrollWidth){ imgs.scrollBy(200,0) }
-            else 
-            { 
-                imgs.scroll(0, 0);
+            if(time)
+            {
+                console.log(imgs.scrollLeft + 1000 <= imgs.scrollWidth);
+                if (imgs.scrollLeft + 1000 <= imgs.scrollWidth){ imgs.scrollBy(200,0) }
+                else { imgs.scroll(0, 0); }
             }
+            else { time = !time }
         }, 3000)
 
     </script>

@@ -83,6 +83,12 @@ header
         height: 15px;
         z-index: 999;
     }
+
+    #links-nav-mobile__header
+    {
+        display: none;
+        z-index: -10;
+    }
 }
 
 #links-nav-mobile__header li
@@ -96,8 +102,8 @@ header
     display: block;
     width: 50px;
     height: 32px;
-    top: 30px;
-    right: 24px;
+    top: 16px;
+    right: 31.3px;
     z-index: 99;
     opacity: 0;
     cursor: pointer;
@@ -145,7 +151,7 @@ div#mobile-menu__header div.hamburger-lines span.line.line3
     top: 0;
     right: -1vw;
     padding-top: 30vh;
-    background-image: linear-gradient(-90deg, #000000f0, #00000000 90%);
+    background-image: linear-gradient(-90deg, #00000000, #00000000 90%);
     backdrop-filter: blur(10px);
     width: 100vw;
     height: 100vh;
@@ -153,8 +159,9 @@ div#mobile-menu__header div.hamburger-lines span.line.line3
     flex-direction: column;
     text-align: center;
     transition: transform 0.5s ease-in-out, background-color .5s ease-in-out, opacity 1s ease-in-out;
-    z-index: 1;
+    z-index: 0;
     opacity: 0;
+    display: none;
 }
 
 #mobile-menu__header #links-nav-mobile__header li a
@@ -217,4 +224,13 @@ div#mobile-menu__header div.hamburger-lines span.line.line3
 #mobile-menu__header #checkbox:checked ~ .hamburger-lines .line3
 {
     transform: rotate(-45deg) translate(0px, 0px);
+}
+
+#mobile-menu__header #checkbox:checked ~ #links-nav-mobile__header
+{
+    display: block;
+    z-index: 1;
+    opacity: 1;
+    transition: all .1s ease-in-out;
+
 }
